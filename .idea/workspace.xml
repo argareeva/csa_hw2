@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ec04597-67d2-4cd2-885b-68d4112109e3" name="Changes" comment="">
+    <list default="true" id="0ec04597-67d2-4cd2-885b-68d4112109e3" name="Changes" comment="Directory with files is created. Method listOfFiles is showing every file in our directory in console. If there is subfolder - it goes inside and get names of inner files.">
+      <change afterPath="$PROJECT_DIR$/1/Folder 1/fragment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/Folder 1/Активити.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/fragment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/Активити.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/File 3" beforeDir="false" afterPath="$PROJECT_DIR$/1/Folder 3/File 3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Folder 1/File 1-1" beforeDir="false" afterPath="$PROJECT_DIR$/1/Folder 1/File 1-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Folder 2/File 2-1" beforeDir="false" afterPath="$PROJECT_DIR$/1/Folder 2/File 2-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Folder 2/File 2-2" beforeDir="false" afterPath="$PROJECT_DIR$/1/Folder 2/File 2-2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,21 +32,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Альбина\Documents\University\Java\Gareeva-kpo-idz2\Folder 2" />
-      <recent name="C:\Users\Альбина\Documents\University\Java\Gareeva-kpo-idz2\Folder 1" />
       <recent name="C:\Users\Альбина\Documents\University\Java\Gareeva-kpo-idz2\1" />
+      <recent name="C:\Users\Альбина\Documents\University\Java\Gareeva-kpo-idz2\1\Folder 3" />
+      <recent name="C:\Users\Альбина\Documents\University\Java\Gareeva-kpo-idz2\Folder 1" />
+      <recent name="C:\Users\Альбина\Documents\University\Java\Gareeva-kpo-idz2\Folder 2" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -50,6 +59,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670772811095</updated>
     </task>
+    <task id="LOCAL-00001" summary="Directory with files is created. Method listOfFiles is showing every file in our directory in console. If there is subfolder - it goes inside and get names of inner files.">
+      <created>1670773820196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670773820196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -65,5 +82,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Directory with files is created. Method listOfFiles is showing every file in our directory in console. If there is subfolder - it goes inside and get names of inner files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Directory with files is created. Method listOfFiles is showing every file in our directory in console. If there is subfolder - it goes inside and get names of inner files." />
   </component>
 </project>
