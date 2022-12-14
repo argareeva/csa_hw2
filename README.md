@@ -1,0 +1,14 @@
+# Gareeva-kpo-idz2
+- [X] Find all the files in root folder
+    - [X] Check if the path is exists
+    - [X] If there is a subfolder - get all inner files
+    - [X] Show the list of all files
+- [ ] Find text files among all files we got
+    - [ ]
+    - [ ] 
+- [ ] Sorting algorithm of text files
+    - [ ]
+    - [ ]
+- [ ] Create final text from all the text files based on sorting algorithm
+    - [ ]
+    - [ ]
