@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ec04597-67d2-4cd2-885b-68d4112109e3" name="Changes" comment="Directory with files is created. Method listOfFiles is showing every file in our directory in console. If there is subfolder - it goes inside and get names of inner files.">
-      <change afterPath="$PROJECT_DIR$/1/Folder 1/fragment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/Folder 1/Активити.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/fragment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/Активити.jpg" afterDir="false" />
+    <list default="true" id="0ec04597-67d2-4cd2-885b-68d4112109e3" name="Changes" comment="Images are added to directory 1 to check correct reading. &#10;From list of all files filter only &quot;.txt&quot; files to read. Final method prints all texts from all &quot;.txt&quot; files separately to show result of reading.">
+      <change afterPath="$PROJECT_DIR$/src/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FilesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FilesWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/File 3" beforeDir="false" afterPath="$PROJECT_DIR$/1/Folder 3/File 3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder 1/File 1-1" beforeDir="false" afterPath="$PROJECT_DIR$/1/Folder 1/File 1-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder 2/File 2-1" beforeDir="false" afterPath="$PROJECT_DIR$/1/Folder 2/File 2-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder 2/File 2-2" beforeDir="false" afterPath="$PROJECT_DIR$/1/Folder 2/File 2-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/Folder 1/fragment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/Folder 1/Активити.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/Folder 3/File 3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,12 +43,16 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Альбина/Documents/University/Java/Gareeva-kpo-idz2/1&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Альбина\Documents\University\Java\Gareeva-kpo-idz2\1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Альбина\Documents\University\Java\Gareeva-kpo-idz2\1" />
       <recent name="C:\Users\Альбина\Documents\University\Java\Gareeva-kpo-idz2\1\Folder 3" />
@@ -66,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670773820196</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Images are added to directory 1 to check correct reading. &#10;From list of all files filter only &quot;.txt&quot; files to read. Final method prints all texts from all &quot;.txt&quot; files separately to show result of reading.">
+      <created>1671015894471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671015894471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Directory with files is created. Method listOfFiles is showing every file in our directory in console. If there is subfolder - it goes inside and get names of inner files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Directory with files is created. Method listOfFiles is showing every file in our directory in console. If there is subfolder - it goes inside and get names of inner files." />
+    <MESSAGE value="Images are added to directory 1 to check correct reading. &#10;From list of all files filter only &quot;.txt&quot; files to read. Final method prints all texts from all &quot;.txt&quot; files separately to show result of reading." />
+    <option name="LAST_COMMIT_MESSAGE" value="Images are added to directory 1 to check correct reading. &#10;From list of all files filter only &quot;.txt&quot; files to read. Final method prints all texts from all &quot;.txt&quot; files separately to show result of reading." />
   </component>
 </project>

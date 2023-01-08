@@ -1,82 +1,75 @@
-import java.io.*;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
 
-    private static final String NAME_OF_FOLDER = "1";
+    private static final String DEFAULT_FOLDER = "1";
+    //TODO RESULT_FILE should be defined!
+    private static final String RESULT_FILE = "/Users/Albina/Desktop/result.txt";
 
     public static void main(String[] args) {
-        List<File> listOfAllFiles = new ArrayList<>();
-        saveFilesFromDirectory(NAME_OF_FOLDER, listOfAllFiles);
-        printListOfFiles(listOfAllFiles);
-        printTextFromFiles(createListOfTextFiles(listOfAllFiles));
-    }
-
-    static void saveFilesFromDirectory(String directoryName, List<File> listOfAllFiles) {
-        File directory = new File(directoryName);
-        if (directory.exists()) {
-            parseDirectory(directory.listFiles(), listOfAllFiles);
-        } else {
-            System.out.println("Sorry, wrong name of directory!");
-        }
-    }
-
-    private static void parseDirectory(File[] filesInOneDirectory, List<File> listOfAllFiles) {
-        if (filesInOneDirectory == null) {
-            System.out.println("Folder is empty");
-            return;
-        }
-        for (File file : filesInOneDirectory) {
-            parseFilesOrMoveToNextDir(listOfAllFiles, file);
-        }
-    }
-
-    private static void parseFilesOrMoveToNextDir(List<File> listOfAllFiles, File file) {
-        if (file.isFile()) {
-            listOfAllFiles.add(file);
-        } else {
-            saveFilesFromDirectory(file.getAbsolutePath(), listOfAllFiles);
-        }
-    }
-
-    static List<File> createListOfTextFiles(List<File> files) {
-        List<File> filteredFiles = new ArrayList<>();
-        for (File f : files) {
-            if (f.getName().endsWith(".txt")) {
-                filteredFiles.add(f);
+        /**
+         * Read text files in folder
+         */
+        FilesReader filesReader = new FilesReader(new File(DEFAULT_FOLDER), "txt");
+        List<File> files = filesReader.getFiles();
+        /**
+         * For sorting we use Node class (because we need to define requires in each file)
+         */
+        List<Node> unsortedNodes = new ArrayList<>();
+        try {
+            for (File file : files) {
+                unsortedNodes.add(FileUtils.getNode(file));
             }
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
         }
-        return filteredFiles;
+        /**
+         * Sort Nodes
+         */
+        List<Node> sortedNodes = getSortedNodes(unsortedNodes);
+        try {
+            FilesWriter filesWriter = new FilesWriter(RESULT_FILE);
+            for (Node node : sortedNodes) {
+                filesWriter.writeToFile(FileUtils.getTextFileContent(node.getFile()));
+            }
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+        /**
+         * To see result in console: printNodes(sortedNodes);
+         */
     }
 
-    private static void printListOfFiles(List<File> listOfAllFiles) {
-        System.out.println("List of all files in directory 1: ");
-        for (File f : listOfAllFiles) {
-            System.out.println(f.getName());
+    /**
+     * Method to see result in console
+     */
+    private static void printNodes(List<Node> nodes) {
+        try {
+            for (Node node : nodes) {
+                System.out.println(FileUtils.getTextFileContent(node.getFile()));
+            }
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
         }
     }
 
-    static void printTextFromFiles(List<File> listToRead) {
-        System.out.println("\nList of all texts in all text files: ");
-        String[] texts;
-        for (File file : listToRead) {
-            System.out.println();
-            try (Reader reader = new InputStreamReader(new FileInputStream(file))) {
-                char[] array = new char[128];
-                int count = reader.read(array);
-                StringBuilder result = new StringBuilder();
-                while (count > 0) {
-                    result.append(new String(array, 0, count));
-                    count = reader.read(array);
+
+    private static List<Node> getSortedNodes(List<Node> unsortedNodes) {
+        int size = unsortedNodes.size();
+        for (int i = 0; i < size; i++) {
+            for (int j = i + 1; j < size; j++) {
+                if (unsortedNodes.get(i).getDependencies().size() > unsortedNodes.get(j).getDependencies().size()) {
+                    Node temp = unsortedNodes.get(i);
+                    Node temp2 = unsortedNodes.get(j);
+                    unsortedNodes.remove(i);
+                    unsortedNodes.add(i, temp2);
+                    unsortedNodes.remove(j);
+                    unsortedNodes.add(j, temp);
                 }
-                texts = result.toString().split(" /n");
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            for (String a : texts) {
-                System.out.print(a);
             }
         }
+        return unsortedNodes;
     }
 }
