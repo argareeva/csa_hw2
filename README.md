@@ -1,4 +1,4 @@
-# Gareeva-kpo-idz2
+# csa_hw2
 - [X] Find all the files in root folder
     - [X] Check if the path is exists
     - [X] If there is a subfolder - get all inner files
